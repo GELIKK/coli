@@ -1,0 +1,503 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&display=swap");
+:root {
+  --secondary-font: "Montserrat", sans-serif;
+  --primary-font: "Cinzel", serif;
+  --active-color: #273a4e;
+  --active: #5c6b7a;
+  --overlay-color: rgba(39, 58, 78, 0.3);
+  --black: #303131;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: var(--primary-font);
+}
+input {
+  background-color: darkred;
+}
+
+.acitve {
+  color: var(--active);
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header {
+  width: 100%;
+  position: fixed;
+  top: 0px;
+  background-color: black;
+  z-index: 10;
+}
+
+header nav {
+  width: 90% !important;
+  height: 90px;
+}
+
+header nav .container-fluid .collapse {
+  justify-content: flex-end;
+}
+
+header nav .container-fluid .navbar-brand {
+  font-size: 36px;
+  font-weight: 400;
+  color: burlywood;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  margin-left: 200px;
+}
+
+header nav .container-fluid .collapse .navbar-nav {
+  gap: 20px;
+}
+
+header nav .container-fluid .navbar-brand:hover,
+header nav .container-fluid .collapse ul li a:hover {
+  color: aquamarine;
+  font-size: 25px;
+}
+
+header nav .container-fluid .collapse ul li a {
+  font-size: 25px;
+  font-family: var(--secondary-font);
+  font-weight: 400;
+  text-transform: capitalize;
+  color: var(--black);
+  color: aqua;
+}
+
+main {
+  width: 100%;
+  margin-top: 65px;
+  display: grid;
+  grid-template-columns: 1fr;
+  place-items: center;
+}
+
+main section {
+  width: 100%;
+}
+
+main .banner {
+  height: 900px;
+  background-image: url("https://wallpaperaccess.com/full/1268365.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+}
+
+main .banner .overlay {
+  background-color: var(--overlay-color);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+main .banner .overlay div h1 {
+  font-size: 70px;
+  font-weight: 300;
+  color: yellow;
+  letter-spacing: 0.1em;
+  text-align: center;
+  margin: 0px;
+  margin-bottom: 40px;
+}
+input main .banner .overlay div h3 {
+  font-size: 20px;
+  font-family: var(--secondary-font);
+  font-weight: 400;
+  letter-spacing: 0.7em;
+  color: white;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+main .banner .overlay div div button,
+main .portfolio .bottom article .overlay button {
+  width: 230px;
+  height: 50px;
+  border: 1px solid white;
+  background-color: transparent;
+  font-size: 25px;
+  font-family: var(--secondary-font);
+  font-weight: 400;
+  color: white;
+}
+
+main .banner .overlay div div button:hover,
+main .portfolio .bottom article .overlay button:hover {
+  background-color: var(--active-color);
+  border: 0px;
+  transition: 0.5s;
+}
+
+footer {
+  width: 100%;
+}
+
+footer section {
+  width: 90%;
+  display: grid;
+  grid-template-columns: 1fr;
+  place-items: center;
+}
+
+footer section nav ul {
+  padding: 0px;
+  gap: 25px;
+  list-style: none;
+  margin-top: 20px;
+}
+
+footer section nav ul li a {
+  font-size: 20px;
+  color: var(--black);
+}
+
+footer section aside p {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: var(--secondary-font);
+  word-break: break-all;
+}
+
+.chat {
+  position: fixed;
+  right: 2%;
+  bottom: 25px;
+  width: 64px;
+  height: 64px;
+  background-color: rgb(176, 135, 156);
+}
+
+.chat i {
+  font-size: 30px;
+  color: white;
+}
+
+main .portfolio {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 20px;
+}
+
+main .portfolio .header-text {
+  font-size: 40px;
+  font-weight: 400;
+  color: black;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+main .portfolio .bottom {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 10px;
+}
+
+main .portfolio .bottom article {
+  width: 100%;
+  height: 869px;
+  background-image: url("https://static.wixstatic.com/media/f61af8_2ef1fc57fdd849a19df076e8fb6e036f~mv2_d_2681_2546_s_4_2.jpg/v1/fill/w_557,h_869,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/f61af8_2ef1fc57fdd849a19df076e8fb6e036f~mv2_d_2681_2546_s_4_2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+}
+
+main .portfolio .bottom article .overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: var(--overlay-color);
+}
+
+main .portfolio .bottom article .overlay h3 {
+  margin-top: 80px;
+  margin-bottom: 20px;
+  color: white;
+}
+
+main .portfolio .bottom .middle {
+  background-image: url("https://static.wixstatic.com/media/f61af8_0865ef003a1740f9b703014d3b57e3fa~mv2_d_4928_3264_s_4_2.jpg/v1/fill/w_542,h_869,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/f61af8_0865ef003a1740f9b703014d3b57e3fa~mv2_d_4928_3264_s_4_2.jpg");
+}
+
+main .portfolio .bottom .right {
+  background-image: url("https://static.wixstatic.com/media/f61af8_0ecca2bc73f444c98e8de071bb2ce81c~mv2_d_1927_1272_s_2.jpg/v1/fill/w_544,h_869,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/f61af8_0ecca2bc73f444c98e8de071bb2ce81c~mv2_d_1927_1272_s_2.jpg");
+}
+/* abouttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttt */
+
+main .about {
+  width: 85%;
+  height: 884px;
+  display: flex;
+  flex-wrap: wrap;
+
+  background-color: whitesmoke;
+}
+
+main .about div {
+  width: 50%;
+
+  background-color: whitesmoke;
+}
+main .about div .text-aside {
+  margin-top: 150px;
+}
+main .about div .text-aside p {
+  font-size: 14px;
+}
+main .about div .text-aside .jade {
+  font-size: 40px;
+  letter-spacing: 0.05em;
+}
+
+main .about div .text-aside .edu {
+  font-size: 20px;
+}
+main .about div .text-aside .nomination {
+  font-size: 20px;
+}
+/* boookkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk */
+.book-span {
+  font-size: 40px;
+  margin-top: 40px;
+}
+main .book {
+  width: 85%;
+}
+main .book article {
+  width: 100%;
+  height: 720px;
+  margin-top: 20px;
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+  background-color: whitesmoke;
+}
+main .book article aside {
+  width: 50%;
+  height: 360px;
+  background-color: whitesmoke;
+  margin-left: 50px;
+}
+.break {
+  font-size: 64px;
+}
+main .book article aside p {
+  font-size: 15px;
+}
+.cost {
+  font-size: 64px;
+  margin-top: 10px;
+}
+.dolor {
+  font-size: 24px;
+  height: 50px;
+
+  margin-bottom: 20px;
+  display: flex;
+  order: 1;
+}
+main .book article aside div {
+  width: 100%;
+  height: 70;
+  display: flex;
+  margin-right: 0px;
+}
+main .book article aside div button {
+  height: 40px;
+  width: 135px;
+  margin-top: 40px;
+  order: 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 130px;
+  border: 1px solid;
+}
+/* client alllllllllbbbbbbbbbbbuuuuuuummmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm */
+main .book .client aside {
+  width: 405px;
+  height: 450px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+main .book .client {
+  width: 100%;
+  height: 500px;
+}
+.img-1 {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-image: url("https://static.wixstatic.com/media/8bb438_391be5ba664646cf85efa862bf2f93be~mv2.jpg/v1/fill/w_348,h_464,fp_0.50_0.50,q_90,usm_1.00_0.66_0.01/8bb438_391be5ba664646cf85efa862bf2f93be~mv2.webp?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ1cm46YXBwOjZiZTRmNGFmMjAzOTQwOTVhZDY5Y2NjMzk4ODkyYzhkIiwib2JqIjpbW3sicGF0aCI6Ii9tZWRpYS84YmI0MzhfMzkxYmU1YmE2NjQ2NDZjZjg1ZWZhODYyYmYyZjkzYmV-bXYyLmpwZyJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl0sImlzcyI6InVybjphcHA6NmJlNGY0YWYyMDM5NDA5NWFkNjljY2MzOTg4OTJjOGQiLCJpYXQiOjEwMDAsImp0aSI6IjE2NzI1MzEyMDAiLCJleHAiOjE2NzI1MzEyMDAsIndtayI6eyJwYXRoIjoiL21lZGlhLzhiYjQzOF8zOWE3OGI0NmQ0ZmU0NzA2OWRhNjNkYTkzNDhiNGVlNX5tdjIucG5nIiwib3BhY2l0eSI6MSwicHJvcG9ydGlvbnMiOjAuMSwiZ3Jhdml0eSI6Im5vcnRoLXdlc3QifX0.DosuP7KtqhzogNXJz7co3Y4cbdxLHHBgmM6Ewyf26mE");
+}
+.img-2 {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-image: url("https://static.wixstatic.com/media/8bb438_46776c5ebdfa4c2d93f77358e5b2fd41~mv2.jpg/v1/fill/w_349,h_464,fp_0.50_0.50,q_90,usm_1.00_0.66_0.01/8bb438_46776c5ebdfa4c2d93f77358e5b2fd41~mv2.webp?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ1cm46YXBwOjZiZTRmNGFmMjAzOTQwOTVhZDY5Y2NjMzk4ODkyYzhkIiwib2JqIjpbW3sicGF0aCI6Ii9tZWRpYS84YmI0MzhfNDY3NzZjNWViZGZhNGMyZDkzZjc3MzU4ZTViMmZkNDF-bXYyLmpwZyJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl0sImlzcyI6InVybjphcHA6NmJlNGY0YWYyMDM5NDA5NWFkNjljY2MzOTg4OTJjOGQiLCJpYXQiOjEwMDAsImp0aSI6IjE2NzI1MzEyMDAiLCJleHAiOjE2NzI1MzEyMDAsIndtayI6eyJwYXRoIjoiL21lZGlhLzhiYjQzOF8zOWE3OGI0NmQ0ZmU0NzA2OWRhNjNkYTkzNDhiNGVlNX5tdjIucG5nIiwib3BhY2l0eSI6MSwicHJvcG9ydGlvbnMiOjAuMSwiZ3Jhdml0eSI6Im5vcnRoLXdlc3QifX0.lcc_kuAzf20SH8PIqKVxTPb6ECPlAXUlXkiozkQxedc");
+}
+.img-3 {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-image: url("https://static.wixstatic.com/media/8bb438_5571b62b21074416a94a6e7cb48567e8~mv2.jpg/v1/fill/w_348,h_464,fp_0.50_0.50,q_90,usm_1.00_0.66_0.01/8bb438_5571b62b21074416a94a6e7cb48567e8~mv2.webp?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ1cm46YXBwOjZiZTRmNGFmMjAzOTQwOTVhZDY5Y2NjMzk4ODkyYzhkIiwib2JqIjpbW3sicGF0aCI6Ii9tZWRpYS84YmI0MzhfNTU3MWI2MmIyMTA3NDQxNmE5NGE2ZTdjYjQ4NTY3ZTh-bXYyLmpwZyJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl0sImlzcyI6InVybjphcHA6NmJlNGY0YWYyMDM5NDA5NWFkNjljY2MzOTg4OTJjOGQiLCJpYXQiOjEwMDAsImp0aSI6IjE2NzI1MzEyMDAiLCJleHAiOjE2NzI1MzEyMDAsIndtayI6eyJwYXRoIjoiL21lZGlhLzhiYjQzOF8zOWE3OGI0NmQ0ZmU0NzA2OWRhNjNkYTkzNDhiNGVlNX5tdjIucG5nIiwib3BhY2l0eSI6MSwicHJvcG9ydGlvbnMiOjAuMSwiZ3Jhdml0eSI6Im5vcnRoLXdlc3QifX0.7n6u4fia-40WpWz9JOHXp2gwgCajg8HuEL7Anm2-r_U");
+}
+main .book .client aside span {
+  font-size: 40px;
+  color: white;
+}
+main .book .client aside p {
+  font-size: 20px;
+  color: white;
+}
+main .book .client aside div {
+  width: 80%;
+  height: 200px;
+
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+}
+main .book .client aside span span {
+  margin-left: 35px;
+}
+.container-fluid input {
+  width: 350px;
+  height: 35px;
+  border-radius: 50%;
+  font-size: 22px;
+}
+.container-fluid input {
+  background-color: lightgreen;
+  text-align: center;
+}
+
+/* contacttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttt */
+main .book .contact aside {
+  width: 50%;
+  height: 1118px;
+  margin: 0px;
+  background-color: black;
+  margin-top: 230px;
+}
+.contact aside img {
+  width: 95%;
+  margin-top: 165px;
+  height: 600px;
+}
+.foot-contact {
+  margin-top: 200px;
+}
+.flex-center li a,
+p {
+  color: white;
+}
+.book .contact aside span {
+  font-size: 40px;
+  margin-top: 100px;
+}
+.book .contact aside p {
+  margin-top: 200px;
+}
+
+.book .contact aside form div.input {
+  width: 400px;
+  height: 33px;
+  margin: 20px;
+}
+form {
+  margin-top: 50px;
+  width: 450px;
+  height: 600px;
+}
+form div {
+  margin-top: 20px;
+  margin: 5px;
+}
+.but {
+  margin-left: 300px;
+  width: 102px;
+  height: 33px;
+  border: 1px;
+  background-color: #273a4e;
+  color: white;
+}
+form p {
+  padding-bottom: 50px;
+}
+.comment {
+  width: 100%;
+  height: 130px;
+
+  margin-right: 3px;
+  display: flex;
+  margin: 0px;
+}
+.sub {
+  width: 47%;
+  height: 100px;
+}
+.sub .tvini-waigho {
+  width: 133px;
+  height: 33px;
+  margin-left: 0px;
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+  background-color: #273a4e;
+  color: white;
+}
+.diski {
+  width: 53%;
+  height: 130px;
+
+  margin-right: 3px;
+  display: flex;
+  flex-direction: column;
+}
+/* bbbbbbbbbbbbbbbbbbbbbbblllllllllllllllllllllloooooooooooooooggggggggggggggggggggggggggggggggggggggggggg */
+main .blog {
+  width: 85%;
+}
+main .blog span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+}
+main .blog article {
+  width: 100%;
+  height: 400px;
+  margin-top: 20px;
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+}
+main .blog article aside {
+  width: 50%;
+
+  height: 360px;
+
+  margin-left: 50px;
+}
+label {
+  color: white;
+  font-size: 20px;
+}
